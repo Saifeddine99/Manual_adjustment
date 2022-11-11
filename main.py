@@ -1,10 +1,14 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
+
 import os
+
 import tkinter as tk
 from tkinter import filedialog
 
+import requests
+from streamlit_lottie import st_lottie
 def colors(img):
     jadwel = np.array(img).astype(int)
     flat1 = np.reshape(jadwel[:, :8], (-1, 3))
@@ -23,9 +27,6 @@ def colors(img):
 st.set_page_config(page_title="Manual deskew adjustment", page_icon=":scroll:", layout="centered")
 
 st.markdown("<h1 style='text-align: center; color: #0d325c;'>Manual text deskew angle adjustment </h1>", unsafe_allow_html = True)
-
-import requests
-from streamlit_lottie import st_lottie
 
 def load_lottieurl(url):
     r = requests.get(url)
