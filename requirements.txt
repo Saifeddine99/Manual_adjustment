@@ -1,7 +1,6 @@
 absl-py
 altair
 astunparse
-attrdict
 attrs
 blinker
 cachetools
