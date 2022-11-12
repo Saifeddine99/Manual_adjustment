@@ -1,4 +1,4 @@
-﻿absl-py
+absl-py
 altair
 astunparse
 attrs
@@ -40,6 +40,7 @@ pyarrow
 pyasn1
 pyasn1-modules
 pydeck
+pygame
 Pygments
 Pympler
 pyparsing
@@ -74,4 +75,5 @@ validators
 watchdog
 Werkzeug
 wrapt
+wxPython
 zipp
