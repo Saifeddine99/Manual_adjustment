@@ -27,7 +27,6 @@ jsonschema
 keras
 Keras-Preprocessing
 libclang
-libtk8.6
 Markdown
 MarkupSafe
 numpy
@@ -41,6 +40,7 @@ pyarrow
 pyasn1
 pyasn1-modules
 pydeck
+pygame
 Pygments
 Pympler
 pyparsing
@@ -75,4 +75,5 @@ validators
 watchdog
 Werkzeug
 wrapt
+wxPython
 zipp
