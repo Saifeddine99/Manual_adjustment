@@ -3,9 +3,8 @@ from PIL import Image
 import numpy as np
 
 import os
-import tkinter as tk
 
-#import tkinter as tk
+import tkinter as tk
 from tkinter import filedialog
 
 import requests
