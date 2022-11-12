@@ -1,19 +1,18 @@
+# import libraries
 import streamlit as st
+import tkinter as tk
+from tkinter import filedialog
 
-import wx
+# Set up tkinter
+root = tk.Tk()
+root.withdraw()
 
-app = wx.App()
+# Make folder picker dialog appear on top of other windows
+root.wm_attributes('-topmost', 1)
 
-st.title('Folder Picker using wxPython')
-
-clicked = st.button('Click to select the folder', key="FolderSelectionButton")
-
+# Folder picker button
+st.title('Folder Picker')
+st.write('Please select a folder:')
+clicked = st.button('Folder Picker')
 if clicked:
-    dlg_obj = wx.DirDialog(None, "Choose input directory", "",
-                           wx.DD_DEFAULT_STYLE | wx.DD_DIR_MUST_EXIST)
-
-    if dlg_obj.ShowModal() == wx.ID_OK:
-        folder_path = dlg_obj.GetPath()
-
-    st.header('Selected Folder')
-    st.write(folder_path)
+    dirname = st.text_input('Selected folder:', filedialog.askdirectory(master=root))
