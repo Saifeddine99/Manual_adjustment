@@ -194,3 +194,4 @@ else:
             st_lottie(lottie_image, height=300)
         with r:
             st.write('')
+

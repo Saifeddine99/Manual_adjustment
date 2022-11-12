@@ -27,6 +27,7 @@ jsonschema
 keras
 Keras-Preprocessing
 libclang
+libtk8.6
 Markdown
 MarkupSafe
 numpy
