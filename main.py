@@ -17,7 +17,6 @@ def colors(img):
     flat4 = np.reshape(jadwel[-8:, 8:-8], (-1, 3))
 
     flatten_image = np.concatenate((flat1, flat2, flat3, flat4))
-
     moy = [int(np.mean(k)) for k in flatten_image]
     mean1 = np.array(moy).astype(int)
     k = np.bincount(mean1).argmax()

@@ -35,7 +35,7 @@ opt-einsum
 packaging
 pandas
 Pillow
-protobuf~=3.19.0
+protobuf
 pyarrow
 pyasn1
 pyasn1-modules
