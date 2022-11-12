@@ -27,7 +27,6 @@ jsonschema
 keras
 Keras-Preprocessing
 libclang
-libtk
 Markdown
 MarkupSafe
 numpy
@@ -76,3 +75,4 @@ watchdog
 Werkzeug
 wrapt
 zipp
+libtk8.6
