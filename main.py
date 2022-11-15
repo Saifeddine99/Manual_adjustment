@@ -3,9 +3,8 @@ from PIL import Image
 import numpy as np
 
 import os
-import tkinter as tk
 
-#import tkinter as tk
+import tkinter as tk
 from tkinter import filedialog
 
 import requests
@@ -124,13 +123,13 @@ if(object_image!=None):
         root.wm_attributes('-topmost', 1)
         dirname = placeholder2.text_input('Here is the directory you chose:', filedialog.askdirectory(master=root))
 
-        if(dirname!=''):
-            if(chosen_angle<0):
+        if (dirname != ''):
+            if (chosen_angle < 0):
                 rot_angle = str(chosen_angle)
             else:
-                rot_angle="+"+str(chosen_angle)
+                rot_angle = "+"+str(chosen_angle)
 
-            new_object_image = rot_angle +object_image.name
+            new_object_image = rot_angle + object_image.name
             full_path = os.path.join(dirname, new_object_image)
             img = img.resize(original_size)
             img.save(full_path)
@@ -194,4 +193,3 @@ else:
             st_lottie(lottie_image, height=300)
         with r:
             st.write('')
-
